@@ -169,17 +169,9 @@ POST /auth/refresh    { refreshToken }            → { accessToken, refreshToke
 - **Tink/DataStore over `EncryptedSharedPreferences`** — covered above; mainly about not building on a maintenance-mode API.
 - **Result<Unit> over throwing exceptions across the repository boundary** — every `AuthRepository` method returns `Result<Unit>` with a human-readable failure message, so the ViewModel never has to catch anything; it just pattern-matches on success/failure.
 
-## What's intentionally out of scope
+---
+<div align="center">
 
-- **No backend included** — Ridez's backend is Go Fiber + PostgreSQL + Redis, in a separate repo.
-- **No automated tests yet** — the module only has Android Studio's default boilerplate test files. Unit tests for `JwtUtils`, `AuthRepositoryImpl`, and `AuthViewModel` (with a fake `TokenDataStore`) are the natural next addition and are on my list.
-- **No biometric re-auth / device binding** — would be the next security layer on top of this (BiometricPrompt gating access to the stored refresh token).
-- **UI is functional, not polished** — this repo is about the architecture underneath the screens, not the screens themselves.
+Built by **[@shiwal25](https://github.com/shiwal25)**
 
-## Origin
-
-This is the auth module from **Ridez**, an in-progress ride-hailing app (Kotlin/Compose + Koin + Ktor on Android, Go Fiber + PostgreSQL + Redis on the backend, with RedisGeo for driver matching and Razorpay Payouts for UPI settlements). Full repo coming once the rest of the app is further along — this piece was solid enough to stand on its own in the meantime.
-
-## License
-
-MIT — feel free to use any part of this as a reference for your own projects.
+</div>
