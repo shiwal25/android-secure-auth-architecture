@@ -97,7 +97,7 @@ fun HomeScreenContent(
 @Composable
 fun HomeScreenSuccessPreview() {
     HomeScreenContent(
-        userName = "John",
+        userName = "Shivam",
         profileState = ProfileUiState.Success(profile = UserProfile("Shivam","shivam@gmail.com")),
         onRetryClick = {},
         onLogoutClick = {}
@@ -119,7 +119,7 @@ fun HomeScreenLoadingPreview() {
 @Composable
 fun HomeScreenErrorPreview() {
     HomeScreenContent(
-        userName = "John",
+        userName = "Shivam",
         profileState = ProfileUiState.Error(message = "Unable to connect to secure server."),
         onRetryClick = {},
         onLogoutClick = {}
