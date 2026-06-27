@@ -1,4 +1,4 @@
-package com.example.secureauth.feature.auth.domain.repository
+package com.example.secureauth.feature.auth.data.repository
 
 import com.example.secureauth.core.data.local.TokenDataStore
 import com.example.secureauth.feature.auth.data.remote.AuthApiService
@@ -8,6 +8,7 @@ import com.example.secureauth.feature.auth.data.remote.dto.LoginRequest
 import com.example.secureauth.feature.auth.data.remote.dto.RefreshRequest
 import com.example.secureauth.feature.auth.data.remote.dto.RefreshResponse
 import com.example.secureauth.feature.auth.data.remote.dto.RegisterRequest
+import com.example.secureauth.feature.auth.domain.repository.AuthRepository
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.post

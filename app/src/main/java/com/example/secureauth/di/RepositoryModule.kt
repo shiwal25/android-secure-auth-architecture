@@ -1,7 +1,7 @@
 package com.example.secureauth.di
 
 import com.example.secureauth.feature.auth.domain.repository.AuthRepository
-import com.example.secureauth.feature.auth.domain.repository.AuthRepositoryImpl
+import com.example.secureauth.feature.auth.data.repository.AuthRepositoryImpl
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
 
